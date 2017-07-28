@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">cookpad demo</string>
+    <string name="search">ingredient name,dish...</string>
+    <string name="myrecipes">my recipes</string>
+    <string name="bookmarks">bookmarks</string>
+    <string name="photos">photos</string>
+    <string name="manage">manage</string>
+    <string name="status">status</string>
+    <string name="account">account</string>
+    <string name="settings">settings</string>
+    <string name="social">social</string>
+    <string name="chat">chat</string>
+    <string name="share">share</string>
+    <string name="recipes">recipes</string>
+    <string name="trending">trending</string>
+    <string name="nearby">nearby</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+</resources>

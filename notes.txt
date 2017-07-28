@@ -1,0 +1,19 @@
+
+as tested on nexus 4 phone (android 5.1.1)
+
+1. overall too busy ... on small device (phone) should be simpler and cleaner
+2. scrolling is clumsy and bad experience ... is interrupted for network fetches
+3. why not open up recipe/api format ?
+4. why using socket connection instead of https rest calls ?
+5. on main screen, have to go to new activity to do general search ? ... seems most basic function
+6. left / right sliders are fancy, but too much info for user at same activity ... also not in keeping
+   with activity-stack paradigm
+7. with left and right sliders, seems keep lot of info in memory ?
+8. main scrolling lists are too busy ... too much info is presented, when i just want to see nice picture
+   of recipe ... then i can 'drill-down' for more detailed information (standard ui patrtern)
+9. the low-resolution placeholder doesnt add any user-value in my opinion, may waste memory / bandwidth ?
+10. when re-orientate (rotate) device, my position in scrolling list is lost and list is reset at beginning ...
+   should persist the backing-list thru activity/fragment lifecycle for orientation change
+11. if i lose network connection (ex. airplane mode) then app error occurred and can not see a list again
+   until i go out and come back in app
+12. what is 'nearby' tab mean ? from recipes posted by people near me ?

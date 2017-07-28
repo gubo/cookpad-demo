@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@anim/activity_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_out</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="ExpandedTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#00000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedTextAppearance" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RecipeAlphaText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:shadowColor">@color/colorLiteGray</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="RecipeTitleText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorLimeGreen</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="RecipeCommentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

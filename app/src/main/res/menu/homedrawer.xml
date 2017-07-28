@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myrecipes"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/myrecipes">
+        </item>
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/bookmarks">
+        </item>
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_photos"
+            android:title="@string/photos">
+        </item>
+    </group>
+
+    <item android:title="@string/manage">
+        <menu>
+            <item
+                android:id="@+id/nav_status"
+                android:icon="@drawable/ic_status"
+                android:title="@string/status">
+            </item>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account"
+                android:title="@string/account">
+            </item>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings">
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="@string/social">
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_chat"
+                android:title="@string/chat">
+            </item>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share">
+            </item>
+        </menu>
+    </item>
+
+</menu>

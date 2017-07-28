@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- http://www.mindgrub.com/blog/matt-stanford/implementing-collapsing-toolbar-android-material-design -->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/homeappbar"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/ExpandedTextAppearance"
+            app:collapsedTitleTextAppearance="@style/CollapsedTextAppearance"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical" android:gravity="center"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="0dp" android:layout_marginBottom="10dp"
+                    android:src="@drawable/banner" android:scaleType="centerInside"
+                    android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="0dp">
+                </ImageView>
+                <android.support.v7.widget.SearchView
+                    android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="4dp"
+                    android:queryHint="@string/search"
+                    android:background="@drawable/searchbackground"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                </android.support.v7.widget.SearchView>
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="wings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="cucumber salad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="starch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="corn masa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="gumbo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="tuna salad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text=" | " android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                        <TextView android:text="categories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ellipsize="end" android:layout_margin="5dp"></TextView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <View android:layout_marginTop="3dp" android:background="@color/colorLiteGray" android:layout_width="match_parent" android:layout_height="2dp"></View>
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/hometoolbar"
+                app:layout_collapseMode="pin"
+                android:background="#05000000"
+                android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/homeviewpager" android:layout_marginBottom="38dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" android:background="@color/colorPrimary"
+        android:layout_width="match_parent" android:layout_height="38dp">
+        <Button
+            android:id="@+id/homerecipesbutton"
+            android:text="@string/recipes" android:textAllCaps="false"
+            android:layout_weight=".333" android:layout_width="0dp" android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/hometrendingbutton"
+            android:text="@string/trending" android:textAllCaps="false"
+            android:layout_weight=".333" android:layout_width="0dp" android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/homenearbybutton"
+            android:text="@string/nearby" android:textAllCaps="false"
+            android:layout_weight=".333" android:layout_width="0dp" android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/homefab"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_create"
+        app:backgroundTint="@color/colorLimeGreen"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_marginRight="@dimen/fab_margin" android:layout_marginBottom="40dp">
+    </android.support.design.widget.FloatingActionButton>
+
+</android.support.design.widget.CoordinatorLayout>
