@@ -15,5 +15,5 @@ as tested on nexus 4 phone (android 5.1.1)
 10. when re-orientate (rotate) device, my position in scrolling list is lost and list is reset at beginning ...
    should persist the backing-list thru activity/fragment lifecycle for orientation change
 11. if i lose network connection (ex. airplane mode) then app error occurred and can not see a list again
-   until i go out and come back in app
+   until i go out and come back in app ... maybe need to think about adopting a sync architecture
 12. what is 'nearby' tab mean ? from recipes posted by people near me ?

@@ -48,4 +48,13 @@
         <item name="android:ellipsize">end</item>
     </style>
 
+    <style name="Home.Page.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/homepagebutton</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/homepagebuttontextcolor</item>
+    </style>
+
 </resources>

@@ -69,21 +69,25 @@
 
     <LinearLayout
         android:layout_gravity="bottom"
+        android:paddingTop="3dp"
         android:orientation="horizontal" android:background="@color/colorPrimary"
         android:layout_width="match_parent" android:layout_height="38dp">
         <Button
             android:id="@+id/homerecipesbutton"
-            android:text="@string/recipes" android:textAllCaps="false"
+            style="@style/Home.Page.Button"
+            android:text="@string/recipes" android:layout_marginRight="3dp"
             android:layout_weight=".333" android:layout_width="0dp" android:layout_height="wrap_content">
         </Button>
         <Button
             android:id="@+id/hometrendingbutton"
-            android:text="@string/trending" android:textAllCaps="false"
+            style="@style/Home.Page.Button"
+            android:text="@string/trending"
             android:layout_weight=".333" android:layout_width="0dp" android:layout_height="wrap_content">
         </Button>
         <Button
             android:id="@+id/homenearbybutton"
-            android:text="@string/nearby" android:textAllCaps="false"
+            style="@style/Home.Page.Button"
+            android:text="@string/nearby" android:layout_marginLeft="3dp"
             android:layout_weight=".333" android:layout_width="0dp" android:layout_height="match_parent">
         </Button>
     </LinearLayout>

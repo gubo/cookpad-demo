@@ -22,21 +22,21 @@ class TrendingFragment : Fragment()
     }
 
     override fun onCreateView( inflater:LayoutInflater?,container:ViewGroup?,savedInstanceState:Bundle? ) : View? {
-        val view = inflater?.inflate( R.layout.trend,container,false );
-//        trendingPresenter.bind( TrendingAdapter( view ).using( trendingPresenter ) )
+        val view = inflater?.inflate( R.layout.trending,container,false );
+        trendingPresenter.bind( TrendingStaggeredAdapter( view ).using( trendingPresenter ) )
         return view
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-//        trendingPresenter.unbind()
+        trendingPresenter.unbind()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         val changingConfigurations = activity?.isChangingConfigurations ?: false
         if ( !changingConfigurations ) {
-//            trendingPresenter.release()
+            trendingPresenter.release()
         }
     }
 }

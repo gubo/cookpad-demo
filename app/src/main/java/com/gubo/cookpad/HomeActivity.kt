@@ -145,6 +145,10 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
         appBarLayout = findViewById( R.id.homeappbar ) as AppBarLayout
 
+        mainRecipesButton = findViewById( R.id.homerecipesbutton ) as Button
+        mainTrendingButton = findViewById( R.id.hometrendingbutton ) as Button
+        mainNearbyButton = findViewById( R.id.homenearbybutton ) as Button
+
         val mainFragmentStatePagerAdapter = MainFragmentStatePagerAdapter( supportFragmentManager )
         viewPager = findViewById( R.id.homeviewpager ) as ViewPager
         viewPager?.setAdapter( mainFragmentStatePagerAdapter )
@@ -152,12 +156,9 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         viewPager?.setOffscreenPageLimit( 3 )
         viewPager?.setCurrentItem( 0 )
 
-        mainRecipesButton = findViewById( R.id.homerecipesbutton ) as Button
-        mainTrendingButton = findViewById( R.id.hometrendingbutton ) as Button
-        mainNearbyButton = findViewById( R.id.homenearbybutton ) as Button
-
         val onRecipesClickListener = View.OnClickListener { viewPager?.setCurrentItem( 0 ) }
         mainRecipesButton?.setOnClickListener( onRecipesClickListener )
+        mainRecipesButton?.isSelected = true
 
         val onTrendingClickListener = View.OnClickListener { viewPager?.setCurrentItem( 1 ) }
         mainTrendingButton?.setOnClickListener( onTrendingClickListener )
