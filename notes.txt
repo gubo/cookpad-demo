@@ -1,9 +1,13 @@
 
-as tested on nexus 4 phone (android 5.1.1)
+notes:
+(as tested on nexus 4 phone android 5.1.1)
+
+overall the app looks nice, but i feel is unnecessarily complicated to use (should be more
+like the web site) and that the performance could improve.
 
 1. overall too busy ... on small device (phone) should be simpler and cleaner
 2. scrolling is clumsy and bad experience ... is interrupted for network fetches
-3. why not open up recipe/api format ?
+3. why not make open cookpad recipe-format/api ?
 4. why using socket connection instead of https rest calls ?
 5. on main screen, have to go to new activity to do general search ? ... seems most basic function
 6. left / right sliders are fancy, but too much info for user at same activity ... also not in keeping
